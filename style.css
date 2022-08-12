@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root {
+    --bg-color: #fff;
+    --bg-color2: #f2f2f2;
+    --bg-color3: ;
+    --main-color: #ffcc00;
+    --second-main-color: #999999;
+    --text-color: #000;
+    --big-font: 5rem;
+    --h2-font: 1.9rem;
+    --p-font: 1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 24px 14%;
+    transition: .3s;
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background: var(--main-color);
+    transition: .3s;
+}
+
+#menu-icon {
+    font-size: 28px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 120px 14%;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    align-items: center;
+}
+
+.home-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.home-text h5 {
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    color: var(--text-color);
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+.home-text h6 {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.home-text p {
+    max-width: 470;
+    font-size: var(--p-font);
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--second-main-color);
+}
+
+.home-text p a {
+    text-decoration: none;
+    color: var(--second-main-color);
+}
+
+.home-text p a:hover {
+    color: var(--main-color);
+}
+
+.center {
+    text-align: center;
+}
+
+.center h3 {
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+.produtos-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 3rem;
+    align-items: center;
+    margin-top: 4.4rem;
+}
+
+.row{
+    cursor: pointer;
+    transition: all .40s;
+}
+
+.row img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.row h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    background: var(--bg-color2);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.row:hover {
+    transform: translateY(-15px);
+}
+
+.contato-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.2rem;
+}
+
+.contato-form form {
+    position: relative;
+    width: 550px;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: var(--bg-color2);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+form input::placeholder, 
+form textarea::placeholder {
+    color: var(--second-main-color);
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+form .enviar-btn {
+    background: var(--main-color);
+    color: var(--text-color);
+    padding: 0.25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+form .enviar-btn:hover {
+    background: var(--text-color);
+    color: var(--main-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    margin-bottom: 30px;
+}
+
+.copyright a {
+    color: var(--text-color);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: var(--second-main-color);
+}
